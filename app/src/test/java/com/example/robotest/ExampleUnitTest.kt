@@ -5,7 +5,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.shape.AbsoluteCutCornerShape
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -76,8 +75,8 @@ class ExampleUnitTest {
             ) {
                 Box(
                     modifier = Modifier
-                        .size(110.dp)
-                        .background(color = Color.Companion.DarkGray, shape = AbsoluteCutCornerShape(20.dp))
+                        .size(130.dp)
+                        .background(color = Color.Companion.DarkGray, shape = CircleShape)
                 )
             }
         }
