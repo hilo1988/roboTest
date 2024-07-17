@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.AbsoluteCutCornerShape
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -78,6 +79,22 @@ class ExampleUnitTest {
                     modifier = Modifier
                         .size(130.dp)
                         .background(color = Color.DarkGray, shape = AbsoluteCutCornerShape(20.dp))
+                )
+            }
+        }
+    }
+
+    @Test
+    fun squareTest() {
+        composeTestRule.setContent {
+            Box(
+                modifier = Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center
+            ) {
+                Box(
+                    modifier = Modifier
+                        .size(130.dp)
+                        .background(color = Color.Cyan, shape = RoundedCornerShape(20.dp))
                 )
             }
         }
