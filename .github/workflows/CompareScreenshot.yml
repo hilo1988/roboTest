@@ -2,11 +2,13 @@ name: CompareScreenshot
 
 on:
   pull_request:
+    types: [labeled]
 
 permissions: {}
 
 jobs:
   compare-screenshot-test:
+    if: ${{ github.event.label.name == 'compare_screenshot' }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
