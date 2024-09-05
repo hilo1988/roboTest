@@ -54,6 +54,7 @@ android {
         unitTests {
             isIncludeAndroidResources = true
 
+
             all {
                 it.environment("robolectric.logging.enabled", "true")
                 // To run coverage report in Android Studio
