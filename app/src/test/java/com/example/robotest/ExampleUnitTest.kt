@@ -93,7 +93,7 @@ class ExampleUnitTest {
             ) {
                 Box(
                     modifier = Modifier
-                        .size(130.dp)
+                        .size(140.dp)
                         .background(color = Color.Cyan, shape = RoundedCornerShape(20.dp))
                 )
             }
