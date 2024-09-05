@@ -78,7 +78,7 @@ class ExampleUnitTest {
                 Box(
                     modifier = Modifier
                         .size(130.dp)
-                        .background(color = Color.DarkGray, shape = AbsoluteCutCornerShape(20.dp))
+                        .background(color = Color.DarkGray, shape = AbsoluteCutCornerShape(2.dp))
                 )
             }
         }
